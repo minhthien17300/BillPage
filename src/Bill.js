@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 import "./Bill.css";
-import { post } from './fetch.helper'
+import {post} from './fetch'
 import {
     Button,
     Card,
@@ -33,7 +33,7 @@ export default function Bill() {
         (
             async () => {
                 const id = GetURLParameter('id');
-                const response = await post('https://findwhere-app.herokuapp.com/order/paymentConfirm', { id: id });
+                const response = await post('http://localhost:5000/order/paymentConfirm', { id: id });
                 if (response.success) {
                     console.log("success")
                 }
