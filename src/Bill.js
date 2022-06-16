@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 import "./Bill.css";
-import { post } from './helper/fetch.helper'
+import { post } from './fetch.helper'
 import {
     Button,
     Card,
